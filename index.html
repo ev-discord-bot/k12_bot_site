@@ -11,7 +11,9 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
       <script src="/assets/js/script.js"></script>
+      <script src="./assets/js/typewriter.js"></script>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
    </head>
    <body>
@@ -20,8 +22,12 @@
       </div>
       <nav class="navbar">
          <div class="max-width">
-            <img style="height: 100px; width: auto;" src="assets/images/k12_bot_logo.png" alt="logo">
-            <div class="logo"><a style="color: white;">The Unofficial K12 Bot</a></div>
+            <img class="header-img" style="height: 100px; width: auto;" src="assets/images/k12_bot_logo.png" alt="logo">
+            <center>
+               <div class="logo">
+                  <p class="header-text" id="headertext"></p>
+               </div>
+            </center>
             <ul class="menu">
                <li><a href="/" style="color: white;" class="menu-btn">Home</a></li>
                <li><a href="#about" style="color: white;" class="menu-btn">About</a></li>
@@ -39,12 +45,10 @@
          <div class="max-width">
             <div class="home-content">
                <div class="wrapper">
-                  <div class="typing-demo">
-                     <div class="text-2">K12 Bot.</div>
-                  </div>
-                  <p style="color: #5e5e5e;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-transform: uppercase;">
+                  <div class="type-effect-main-text" id="k12-text"></div>
+                  <p style="color: #5e5e5e; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;text-transform: uppercase;">
                </div>
-               <span class="text_1">Display's Schools Announcments.</span><span class="text_2">And display's more!</span>
+               <p id="companionMethods"></p>
                </p>
                <a href="https://discord.com/oauth2/authorize?client_id=1145810547015684136&scope=bot&permissions=139586825280">Invite Now</a>
                <a href="https://discord.gg/GxyyJneC6T">Community</a>
@@ -53,12 +57,12 @@
       </section>
       <section class="about" id="about">
          <div class="max-width">
-            <h2 style="color: white;text-align: center;">About Bot</h2>
+            <div style="position: relative; text-align: center; font-size: 40px; font-weight: 500; color: white; font-family: 'Ubuntu', sans-serif;" id="about-text"></div>
             <br>
             <br>
-            <div style="gap: 70px;" class="about-content">
+            <div style="justify-content: space-between;" class="about-content">
                <div class="column left">
-                  <div style="scale: 0.8; -webkit-user-drag: none; user-select: none;" class="message-deleted">
+                  <div class="message-deleted">
                      <div class="wrapper-embed">
                         <div class="card embed">
                            <div class="card-block">
@@ -96,7 +100,7 @@
       </section>
       <section class="services" id="features">
          <div class="max-width">
-            <h2 class="title">Features</h2>
+            <h2 class="title" id="features-text"></h2>
             <div class="serv-content">
                <div class="card">
                   <div class="box">
@@ -125,7 +129,7 @@
       </section>
       <section class="teams" id="teams">
          <div class="max-width">
-            <h2 class="title">Staff</h2>
+            <h2 class="title" id="staff-text"></h2>
             <div class="carousel owl-carousel">
                <div class="card">
                   <div class="box">
@@ -176,5 +180,6 @@
       <footer>
          <span>© Unofficial K12 Bot - 2024 All rights reserved.<br>I am not associated with K12, Insight PA, or Stride. The Discord bot I created utilizing K12 assets is an independent project and is not endorsed or supported by any of these organizations. All rights to the respective assets belong to their rightful owners.</span>
       </footer>
+      <script src="./assets/js/typewriter.js"></script>
    </body>
 </html>

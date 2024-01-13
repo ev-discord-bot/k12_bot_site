@@ -58,13 +58,3 @@ function updateTime() {
 }
 setInterval(updateTime, 1000);
 window.onload = updateTime;
-
-window.onload = function () {
-    // Get the current path without the hostname
-    var currentPath = window.location.pathname.substring(1);
-
-    // Redirect to the custom 404 page if the path is not empty
-    if (currentPath !== "") {
-        window.location.href = "/404.html";
-    }
-};
