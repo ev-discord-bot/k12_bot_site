@@ -86,3 +86,35 @@ new TypeIt("#k12-text", {
     lifeLike: true,
     waitUntilVisible: true,
  }).go();
+
+
+ new TypeIt("#about-bot-info-text", {
+   strings: "My Discord bot is a dynamic and user-friendly tool that adds a variety of exciting features to your server experience. The K12 bot keeps users up to date with important information by effortlessly displaying recent announcements via slash and prefix commands. Aside from that, the AI chat functionality is constantly evolving, with regular updates and fixes to ensure a smooth and engaging interaction. Furthermore, a slew of new commands and features are on the way, promising to make the bot even more versatile and feature-rich. The Discord bot is designed to cater to a variety of preferences, making it a valuable addition to any server, whether you're looking for informative updates or interactive conversations.",
+   speed: 10,
+   lifeLike: true,
+   waitUntilVisible: true,
+}).go();
+
+
+new TypeIt("#shows-announcments-text", {
+   strings: "The K12 bot could display all recent announcements via slash and prefix commands, among other things. Like a calculator, it displays the weather, random memes from Wretched_Snow, and a simple currency system that is still in development.",
+   speed: 10,
+   lifeLike: true,
+   waitUntilVisible: true,
+}).go();
+
+
+ new TypeIt("#ai-chat-text", {
+   strings: "The AI chat in the Discord bot is continuously evolving, receiving regular updates, fixes, and exciting new features to enhance its functionality and user experience.",
+   speed: 10,
+   lifeLike: true,
+   waitUntilVisible: true,
+}).go();
+
+
+new TypeIt("#more-coming-soon-text", {
+   strings: "Stay tuned for an array of additional commands and features set to be introduced soon, enriching the Discord bot with even more capabilities for an enhanced user experience.",
+   speed: 10,
+   lifeLike: true,
+   waitUntilVisible: true,
+}).go();
